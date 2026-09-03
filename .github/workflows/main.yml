@@ -2,6 +2,11 @@ name: A wf for my hello world file
 on:
   schedule:
     - cron: '*/5 * * * *'
+  workflow_dispatch: 
+    inputs:
+      first_name:
+        required: true
+        default: 'Abdullah'
 jobs:
   build:
    name: Hello world action
