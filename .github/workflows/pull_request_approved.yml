@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name:
-        uses:  pullreminders/label-when-approved-action@develop
+        uses:  pullreminders/label-when-approved-action@main
         env:
          APPROVALS: "1"
          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
