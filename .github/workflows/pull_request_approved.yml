@@ -1,0 +1,14 @@
+name: Add Label to Approuved Pull Request
+on:
+  pull_request: 
+
+jobs:
+  add_label:
+    runs-on: ubuntu-latest
+    steps:
+      - name:
+        uses:  pullreminders/label-when-approved-action@main
+        env:
+         APPROVALS: "1"
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+         ADD_LABEL: "approved"
