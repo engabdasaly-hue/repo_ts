@@ -1,5 +1,7 @@
 name: A wf for my hello world file
-on: push
+on:
+  schedule:
+    - cron: '28 11 * SEP THU'
 jobs:
   build:
    name: Hello world action
