@@ -1,7 +1,7 @@
 name: A wf for my hello world file
 on:
   schedule:
-    - cron: '33 11 * SEP THU'
+    - cron: '*/5 * * * *'
 jobs:
   build:
    name: Hello world action
