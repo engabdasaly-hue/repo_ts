@@ -3,10 +3,11 @@ name: Translate English to French
 on: #it means that this wf will triger onece the file1.txt is being uploaded 
   push:
     paths:
-      - file1.txt
+      - file4.txt
       
 jobs: #job description
   translate_job:
+    if: github.ref=='refs/heads/develop'
     runs-on: ubuntu-latest
     permissions:
       contents: write #allow Github actions to push to repo
