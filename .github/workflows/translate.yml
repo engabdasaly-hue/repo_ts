@@ -37,3 +37,7 @@ jobs: #job description
           git push
         env: 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: print github.action_path
+        run: echo "the github.action_paths" >> ${{ github.action_path }}
+      
