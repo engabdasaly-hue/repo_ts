@@ -18,3 +18,7 @@ jobs:
        uses: actions/checkout@v3
      - name: print event trigger
        run: echo "Triggered by ${{ github.event_name }}"
+     - name: set the value
+       run: echo "action_status=yellow" >> "$GITHUB_ENV"
+     - name: use the value
+       run: printf '%s/n "$action_status"
