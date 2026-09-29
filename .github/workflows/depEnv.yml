@@ -1,5 +1,7 @@
 name: Deploy env
 on:
+  push:
+    branches: ['Fetaure/*']
   workflow_dispatch: 
     inputs:
       first_name:
