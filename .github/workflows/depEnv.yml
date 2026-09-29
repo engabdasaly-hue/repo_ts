@@ -28,7 +28,7 @@ jobs:
       - uses: actions/download-artifact@v8
         with:
           name: file
-      - run: cat file/txt
+      - run: cat file.txt
       
   build:
     environment:
