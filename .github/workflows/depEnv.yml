@@ -1,7 +1,7 @@
 name: Deploy env
 on:
   push:
-    branches: ['Fetaure/*']
+    branches: ['Feature/*']
   workflow_dispatch: 
     inputs:
       first_name:
@@ -10,7 +10,7 @@ on:
 jobs:
   build:
    environment:
-     name: Prodution
+     name: Production
    name: Hello world action
    runs-on: ubuntu-latest
    steps:
