@@ -1,0 +1,13 @@
+name: using js action
+description: this action for testing a js action
+
+on: push
+jobs:
+  using-js:
+   runs-on: ubuntu-latest
+   steps:
+     - uses: actions/checkout@v4
+     - uses: ./.github/actions/js-actions
+       with:
+         name: 'node17'
+  
