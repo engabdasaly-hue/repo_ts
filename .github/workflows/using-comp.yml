@@ -1,0 +1,12 @@
+name: using composite action
+description: this action for testing a comosite action
+
+on: push
+jobs:
+  using-composite:
+   runs-on: ubuntu-latest
+   steps:
+     - uses: ./.github/actions/composite-actions/action.yml
+       with:
+         name: 'Abdullah'
+  
