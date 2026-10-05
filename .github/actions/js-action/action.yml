@@ -1,0 +1,11 @@
+name: java script action for test
+description: this action is a test of how using java script action 
+inputs:
+  version:
+    description: 'CLI version to install'
+    required: false
+    default: "latest"
+
+runs:
+  using: "node16"
+  main: "index.js"
