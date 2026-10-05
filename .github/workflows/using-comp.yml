@@ -6,6 +6,7 @@ jobs:
   using-composite:
    runs-on: ubuntu-latest
    steps:
+     - uses: actions/checkout@v4
      - uses: ./.github/actions/composite-actions/action.yml
        with:
          name: 'Abdullah'
