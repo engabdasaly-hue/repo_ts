@@ -11,7 +11,7 @@ async function run() {
 
     
   } catch(error){
-    core.setFailed(Ìnstalling failed : ${error.message} `);
+    core.setFailed(`Installing failed : ${error.message} `);
   }
   
 }
