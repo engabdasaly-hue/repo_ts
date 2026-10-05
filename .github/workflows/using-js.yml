@@ -7,7 +7,7 @@ jobs:
    runs-on: ubuntu-latest
    steps:
      - uses: actions/checkout@v4
-     - uses: ./.github/actions/js-actions
+     - uses: ./.github/actions/js-action
        with:
          name: 'node17'
   
