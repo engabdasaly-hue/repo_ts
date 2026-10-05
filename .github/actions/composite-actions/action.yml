@@ -1,0 +1,21 @@
+name: composite action for test
+description: this action is a test of how using composite 
+inputs:
+  name:
+    description: 'Name to greet'
+    required: false
+    default: 'World'
+
+outputs:
+  greeting:
+    description: 'The greeting message'
+
+runs:
+  using: composite
+  steps:
+   - id: greet
+    shell: bash
+    run: |
+        GREETING="Hello $INPUT_NAME"
+        echo "$GREETING"
+        echo "greeting=$GREETING" >> $GITHUB_OUTPUT
