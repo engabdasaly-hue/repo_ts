@@ -13,11 +13,11 @@ outputs:
 runs:
   using: composite
   steps:
-   - id: checkout repo
+   - name: checkout repo
      uses: actions/checkout@v4
-   - id: greet
-    shell: bash
-    run: |
+   - name: greet
+     shell: bash
+     run: |
         GREETING="Hello $INPUT_NAME"
         echo "$GREETING"
         echo "greeting=$GREETING" >> $GITHUB_OUTPUT
