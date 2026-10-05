@@ -15,7 +15,4 @@ runs:
   steps:
    - name: greet
      shell: bash
-     run: |
-        GREETING="Hello $INPUT_NAME"
-        echo "$GREETING"
-        echo "greeting=$GREETING" >> $GITHUB_OUTPUT
+     run: echo "Hello " $ {{ inputs.name }}
