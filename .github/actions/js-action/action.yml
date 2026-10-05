@@ -7,5 +7,5 @@ inputs:
     default: "latest"
 
 runs:
-  using: "node21"
+  using: "node24"
   main: "index.js"
